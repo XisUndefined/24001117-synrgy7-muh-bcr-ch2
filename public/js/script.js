@@ -72,5 +72,22 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCarousel();
   });
 
+  document.querySelectorAll(".accordion").forEach((button) => {
+    button.addEventListener("click", () => {
+      const targetId = button.getAttribute("data-accordion-target");
+      const targetEl = document.querySelector(targetId);
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+      button.setAttribute("aria-expanded", !isExpanded);
+
+      if (!isExpanded) {
+        const scrollHeight = targetEl.scrollHeight;
+        targetEl.style.maxHeight = scrollHeight + "px";
+      } else {
+        targetEl.style.maxHeight = "0";
+      }
+    });
+  });
+
   updateCarousel();
 });
