@@ -20,7 +20,7 @@
   }
 
   .overlay {
-    @apply fixed w-1/2 h-svh bg-black bg-opacity-60 z-10;
+    @apply fixed w-1/2 h-screen bg-black bg-opacity-60 z-10;
   }
 }
 
