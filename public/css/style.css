@@ -816,6 +816,10 @@ video {
   border-radius: 0.125rem;
 }
 
+.rounded-\[13px\] {
+  border-radius: 13px;
+}
+
 .border-\[1px\] {
   border-width: 1px;
 }
@@ -838,6 +842,10 @@ video {
 .bg-limegreen-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(92 184 95 / var(--tw-bg-opacity));
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .px-4 {
@@ -1107,6 +1115,11 @@ video {
   .xl\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .xl\:px-80 {
+    padding-left: 20rem;
+    padding-right: 20rem;
   }
 
   .xl\:text-start {
