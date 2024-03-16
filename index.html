@@ -7,6 +7,42 @@
     <title>BCR | Binar Car Rental</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header class="fixed w-full flex justify-center bg-[#f1f3ff] z-[5]">
+      <div class="container px-4 py-6 flex justify-between">
+        <a href="/" class="bg-darkblue-700 text-darkblue-700 px-5">logo</a>
+        <button id="nav-toggle" class="z-50 block md:hidden">
+          <span
+            class="nav-line origin-top-left transition duration-300 ease-in-out"
+          ></span>
+          <span class="nav-line transition duration-300 ease-in-out"></span>
+          <span
+            class="nav-line origin-bottom-left transition duration-300 ease-in-out"
+          ></span>
+        </button>
+        <nav
+          id="nav-menu"
+          class="sm:max-md:absolute sm:max-md:right-0 sm:max-md:top-0 sm:max-md:h-svh sm:max-md:w-1/2 sm:max-md:bg-white sm:max-md:py-7 sm:max-md:px-4 z-20 hidden md:flex md:gap-8"
+        >
+          <ul
+            class="flex flex-wrap sm:max-md:before:content-['BCR'] sm:max-md:before:font-bold text-nowrap text-sm leading-5 gap-4 md:gap-8 md:px-4 md:py-3"
+          >
+            <li class="sm:max-md:w-full">
+              <a href="#services">Our Services</a>
+            </li>
+            <li class="sm:max-md:w-full"><a href="#about">Why Us</a></li>
+            <li class="sm:max-md:w-full">
+              <a href="#testimonial">Testimonial</a>
+            </li>
+            <li class="sm:max-md:w-full"><a href="#faq">FAQ</a></li>
+          </ul>
+          <button
+            class="bg-limegreen-700 rounded-sm leading-5 sm:max-md:my-4 px-4 py-3 text-white text-sm font-bold"
+          >
+            Register
+          </button>
+        </nav>
+      </div>
+    </header>
+    <script type="module" src="./public/js/script.js"></script>
   </body>
 </html>
