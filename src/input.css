@@ -28,4 +28,16 @@
   .about-card {
     @apply p-6 rounded-lg border-[1px] border-[#d0d0d0] w-full;
   }
+
+  .testimonial-card {
+    @apply flex flex-wrap sm:max-md:flex-nowrap md:max-lg:flex-wrap lg:flex-nowrap justify-center items-center sm:max-md:gap-11 lg:gap-11 bg-[#f1f3ff] mx-4 max-w-[443px] sm:max-w-[608px] md:max-w-[352px] lg:max-w-[480px] xl:max-w-[608px] px-10 py-8 rounded-lg;
+  }
+
+  .review-img {
+    @apply my-6;
+  }
+
+  .review {
+    @apply flex flex-wrap before:content-[url('./../img/rate.svg')] w-full justify-center sm:max-md:justify-start md:max-lg:justify-center lg:justify-start gap-2;
+  }
 }
