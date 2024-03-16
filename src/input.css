@@ -23,3 +23,9 @@
     @apply fixed w-1/2 h-svh bg-black bg-opacity-60 z-10;
   }
 }
+
+@layer components {
+  .about-card {
+    @apply p-6 rounded-lg border-[1px] border-[#d0d0d0] w-full;
+  }
+}
