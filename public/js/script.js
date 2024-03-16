@@ -15,3 +15,62 @@ window.addEventListener("click", function (e) {
     body.classList.remove("max-md:before:overlay");
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.getElementById("testimonial-carousel");
+  const cards = document.querySelectorAll(".testimonial-card");
+  const totalCards = cards.length;
+
+  let currentPosition;
+  if (totalCards % 2 === 1) {
+    currentPosition =
+      window.innerWidth >= 768
+        ? -(Math.floor(totalCards / 2) - 1)
+        : -Math.floor(totalCards / 2);
+  } else if (totalCards % 2 === 0) {
+    currentPosition =
+      window.innerWidth >= 768
+        ? -(totalCards / 2) + 1.5
+        : -(totalCards / 2) + 0.5;
+  }
+
+  function updateCarousel() {
+    const carouselWidth = cards[0].clientWidth + 32;
+    const offset = -(currentPosition * carouselWidth);
+    carousel.style.transform = `translateX(${offset}px)`;
+  }
+
+  document.getElementById("prev-btn").addEventListener("click", () => {
+    if (totalCards % 2 === 1) {
+      if (currentPosition > -Math.floor(totalCards / 2)) {
+        currentPosition--;
+        updateCarousel();
+      }
+    } else if (totalCards % 2 === 0) {
+      if (currentPosition > -(totalCards / 2 - 0.5)) {
+        currentPosition += -1;
+        updateCarousel();
+      }
+    }
+  });
+
+  document.getElementById("next-btn").addEventListener("click", () => {
+    if (totalCards % 2 === 1) {
+      if (currentPosition < Math.floor(totalCards / 2)) {
+        currentPosition++;
+        updateCarousel();
+      }
+    } else if (totalCards % 2 === 0) {
+      if (currentPosition < totalCards / 2 - 0.5) {
+        currentPosition += 1;
+        updateCarousel();
+      }
+    }
+  });
+
+  window.addEventListener("resize", function () {
+    updateCarousel();
+  });
+
+  updateCarousel();
+});
