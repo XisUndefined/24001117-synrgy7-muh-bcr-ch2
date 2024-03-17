@@ -30,7 +30,7 @@
   }
 
   .testimonial-card {
-    @apply flex flex-wrap sm:max-md:flex-nowrap md:max-lg:flex-wrap lg:flex-nowrap justify-center items-center sm:max-md:gap-11 lg:gap-11 bg-[#f1f3ff] mx-4 max-w-[443px] sm:max-w-[608px] md:max-w-[352px] lg:max-w-[480px] xl:max-w-[608px] px-10 py-8 rounded-lg;
+    @apply flex flex-wrap sm:max-md:flex-nowrap md:max-lg:flex-wrap lg:flex-nowrap justify-center items-center sm:max-md:gap-11 lg:gap-11 bg-[#f1f3ff] mx-4 max-w-[360px] sm:max-w-[608px] md:max-w-[352px] lg:max-w-[480px] xl:max-w-[608px] px-10 py-8 rounded-lg;
   }
 
   .review-img {
@@ -42,7 +42,7 @@
   }
 
   .accordion {
-    @apply text-sm font-light leading-5 border-[1px] rounded-[4px] flex w-full items-center justify-between p-4 after:content-[url("./../img/chevron-down.svg")] after:transform after:origin-center after:duration-200 after:ease-in-out after:aria-expanded:rotate-180;
+    @apply text-sm font-light leading-5 text-start border-[1px] rounded-[4px] flex w-full items-center justify-between p-4 after:content-[url("./../img/chevron-down.svg")] after:transform after:origin-center after:duration-200 after:ease-in-out after:aria-expanded:rotate-180;
   }
 
   .accordion-collapse {
