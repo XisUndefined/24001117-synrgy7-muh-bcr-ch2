@@ -42,7 +42,7 @@
   }
 
   .accordion {
-    @apply text-sm font-light leading-5 text-start border-[1px] rounded-[4px] flex w-full items-center justify-between p-4 after:content-[url("./../img/chevron-down.svg")] after:transform after:origin-center after:duration-200 after:ease-in-out after:aria-expanded:rotate-180;
+    @apply text-sm font-light leading-5 text-start gap-4 border-[1px] rounded-[4px] flex w-full items-center justify-between p-4 after:content-[url("./../img/chevron-down.svg")] after:transform after:origin-center after:duration-200 after:ease-in-out after:aria-expanded:rotate-180;
   }
 
   .accordion-collapse {
