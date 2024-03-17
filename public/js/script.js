@@ -89,5 +89,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  window.addEventListener("scroll", function () {
+    navLine.classList.remove("nav-line__active");
+    navMenu.classList.add("hidden");
+    body.classList.remove("max-md:before:overlay");
+  });
+
   updateCarousel();
 });
